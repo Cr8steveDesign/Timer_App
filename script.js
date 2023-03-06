@@ -47,20 +47,12 @@ btnStart.addEventListener("click", function (e) {
   timeSecs = Number(userMinutes.value) * 60;
 
   timer = setInterval(() => {
-    hour = String(Math.trunc(timeSecs / (60 * 60))).padStart(2, 0);
-    mins = String(Math.trunc(timeSecs / 60)).padStart(2, 0);
+    hour = String(Math.trunc(timeSecs / (60 * 60))).padStart(2, "0");
+    mins = String(Math.trunc(timeSecs / 60) % 60).padStart(2, "0");
     secs = String(Math.trunc(timeSecs % 60)).padStart(2, 0);
 
     // Checks if the min hand is greater than 59 at which it will assign min which olds string '00' t0 the value of mins which will be displayed on the field
-    if (+mins > 59) {
-      mins = +mins - 60;
-    } else if (+mins > 119) {
-      mins = +mins - 120;
-    } else if (+mins > 179) {
-      mins = +mins - 180;
-    } else if (+mins > 239) {
-      mins = +mins - 240;
-    }
+
     labelTime.textContent = `${hour}:${mins}:${secs}`;
 
     timeSecs--;
