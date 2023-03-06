@@ -118,19 +118,27 @@ a {
   color: unset;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 600px) {
   body {
-    min-height: unset;
+    /* min-height: unset;
     height: max-content;
-    position: relative;
+    position: relative; */
   }
   .dateline {
     position: fixed;
     bottom: 0rem;
   }
+  h1 {
+    font-size: 2rem;
+  }
+
+  .countdown {
+    max-width: 300px;
+  }
 
   footer {
     position: fixed;
+    bottom: 0px;
   }
 }
 
