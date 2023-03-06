@@ -118,7 +118,7 @@ a {
   color: unset;
 }
 
-@media screen and (min-width: 600px) {
+@media (max-width: 800px) and (min-width: 600px) {
   body {
     min-height: unset;
     height: max-content;
@@ -142,7 +142,7 @@ a {
   }
 }
 
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 800px) {
   .time {
     font-size: 4rem;
   }
