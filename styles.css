@@ -120,9 +120,10 @@ a {
 
 @media screen and (min-width: 600px) {
   body {
-    /* min-height: unset;
+    min-height: unset;
     height: max-content;
-    position: relative; */
+    position: relative;
+    overflow: scroll;
   }
   .dateline {
     position: fixed;
@@ -164,5 +165,6 @@ a {
   body {
     background-position: left;
     transition: background-position 1s ease-in-out;
+    overflow: scroll;
   }
 }
