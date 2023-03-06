@@ -126,8 +126,7 @@ a {
     overflow: scroll;
   }
   .dateline {
-    position: fixed;
-    bottom: 20px;
+    display: none;
   }
   h1 {
     font-size: 2rem;
