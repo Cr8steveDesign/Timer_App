@@ -67,21 +67,18 @@ btnStart.addEventListener("click", function () {
       musicfinish.play();
       musicfinish.loop(2);
     }
-
-    //music
-    music.play();
-    music.loop();
-
-    //change text color as per interval call
     if (count > colors.length) {
       count = 0;
     }
     count++;
     labelTime.style.color = colors[count];
-    console.log(count);
+    //music
+    music.play();
+    // music.loop();
+
+    //change text color as per interval call
   }, 1000);
 });
-
 btnStop.addEventListener("click", function () {
   clearInterval(timer);
   musicfinish.pause();
