@@ -47,7 +47,7 @@ btnStart.addEventListener("click", function (e) {
   timeSecs = Number(userMinutes.value) * 60;
 
   timer = setInterval(() => {
-    // calculate the hour separately using the modulus operator (%) The Math.trunc(timeSecs / 60) % 60 expression will give you the minute value between 0 and 59, regardless of the total number of minutes entered by the user.
+    // calculate the mins separately using the modulus operator (%) The Math.trunc(timeSecs / 60) % 60 expression will give you the minute value between 0 and 59, regardless of the total number of minutes entered by the user.
 
     hour = String(Math.trunc(timeSecs / (60 * 60))).padStart(2, "0");
     mins = String(Math.trunc(timeSecs / 60) % 60).padStart(2, "0");
