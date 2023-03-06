@@ -47,11 +47,11 @@ btnStart.addEventListener("click", function (e) {
   timeSecs = Number(userMinutes.value) * 60;
 
   timer = setInterval(() => {
+    // calculate the hour separately using the modulus operator (%) The Math.trunc(timeSecs / 60) % 60 expression will give you the minute value between 0 and 59, regardless of the total number of minutes entered by the user.
+
     hour = String(Math.trunc(timeSecs / (60 * 60))).padStart(2, "0");
     mins = String(Math.trunc(timeSecs / 60) % 60).padStart(2, "0");
     secs = String(Math.trunc(timeSecs % 60)).padStart(2, 0);
-
-    // Checks if the min hand is greater than 59 at which it will assign min which olds string '00' t0 the value of mins which will be displayed on the field
 
     labelTime.textContent = `${hour}:${mins}:${secs}`;
 
