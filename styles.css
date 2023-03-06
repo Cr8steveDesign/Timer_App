@@ -118,7 +118,23 @@ a {
   color: unset;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 800px) {
+  body {
+    min-height: unset;
+    height: max-content;
+    position: relative;
+  }
+  .dateline {
+    position: fixed;
+    bottom: 0rem;
+  }
+
+  footer {
+    position: fixed;
+  }
+}
+
+@media screen and (min-width: 820px) {
   .time {
     font-size: 4rem;
   }
