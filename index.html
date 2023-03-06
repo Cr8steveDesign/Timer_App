@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="Favicon/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 role="heading">Timer App</h1>
+      <p id="subtext">Enter how many minutes you'll like to countdown from!</p>
+
+      <div class="countdown" id="countdown-time">
+        <h2>The Countdown</h2>
+
+        <div class="time" id="timer">00:00:00</div>
+      </div>
+      <br />
+      <form>
+        <input
+          type="number"
+          name="Custom-time"
+          id="customTime"
+          placeholder="Enter Mins"
+          required
+        />
+
+        <button id="start-btn" type="button">Start</button>
+        <button id="stop-btn" type="button">Stop</button>
+      </form>
+      <!-- Hello -->
+    </div>
+    <footer>
+      Created with ♥ by
+      <a href="https://twitter.com/Cr8steveDesign" target="_blank"
+        >Cr8steve Design Studios</a
+      >
+    </footer>
+    <section id="date" class="dateline"></section>
+    <script src="script.js"></script>
+  </body>
+</html>
