@@ -39,7 +39,8 @@ let count = 0;
 let music = new Audio("music.mp3");
 let musicfinish = new Audio("finish.mp3");
 
-btnStart.addEventListener("click", function () {
+btnStart.addEventListener("click", function (e) {
+  e.preventDefault();
   if (timer) {
     clearInterval(timer);
   }
@@ -79,7 +80,8 @@ btnStart.addEventListener("click", function () {
     //change text color as per interval call
   }, 1000);
 });
-btnStop.addEventListener("click", function () {
+btnStop.addEventListener("click", function (e) {
+  e.preventDefault();
   clearInterval(timer);
   musicfinish.pause();
 });
