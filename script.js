@@ -55,7 +55,17 @@ btnStart.addEventListener("click", function (e) {
     if (mins > 59) {
       mins = mins - 60;
     }
+    if (mins >= 120) {
+      mins = mins - 120;
+    }
 
+    if (mins >= 180) {
+      mins = mins - 180;
+    }
+
+    if (mins >= 240) {
+      mins = mins - 240;
+    }
     labelTime.textContent = `${hour}:${mins}:${secs}`;
 
     timeSecs--;
