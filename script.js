@@ -53,7 +53,7 @@ btnStart.addEventListener("click", function (e) {
 
     // Checks if the min hand is greater than 59 at which it will assign min which olds string '00' t0 the value of mins which will be displayed on the field
     if (mins > 59) {
-      mins = min;
+      mins = mins - 60;
     }
 
     labelTime.textContent = `${hour}:${mins}:${secs}`;
