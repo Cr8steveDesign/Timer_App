@@ -127,7 +127,7 @@ a {
   }
   .dateline {
     position: fixed;
-    bottom: 0rem;
+    bottom: 20px;
   }
   h1 {
     font-size: 2rem;
